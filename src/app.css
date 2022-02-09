@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+
+--Blue: hsl(246, 80%, 60%);
+--Light-red-work: hsl(15, 100%, 70%);
+--Soft-blue: hsl(195, 74%, 62%);
+--Light-red-study: hsl(348, 100%, 68%);
+--Lime-green: hsl(145, 58%, 55%);
+--Violet: hsl(264, 64%, 52%);
+--Soft-orange: hsl(43, 84%, 65%);
+--Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
+--White: hsla(233, 2%, 82%);
+--font: 'Rubik', sans-serif;
+
+
+}
+
+html {
+    background-color: var(--Very-dark-blue);
+    font-family: var(--font);
+}
+
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 300;
+    color: var(--White);
+}
+
+h2 {
+    font-size: 1.125em;
+    color: var(--White);
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 3.5rem;
+    color: var(--White);
+    font-weight: 300;
+
+}
+
+p {
+    color: var(--White);
+
+}
+
+button {
+    color: var(--Desaturated-blue);
+}
+
+button:hover,
+button:active,
+button:focus{
+    color: var(--White);
+}
