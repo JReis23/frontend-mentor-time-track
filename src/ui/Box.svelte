@@ -1,9 +1,7 @@
 <script>
 	import options from '../data/options.js';
 
-	export let dailyButton = true;
-	export let weeklyButton = false;
-	export let monthyButton = false;
+	export let mode = 'daily';
 </script>
 
 {#each options as option (option.id)}
@@ -16,13 +14,13 @@
 				<h2>{option.title}</h2>
 				<a href="/"><img src="../static/images/icon-ellipsis.svg" alt="ellipsis" /></a>
 			</div>
-			{#if dailyButton}
+			{#if mode === 'daily'}
 				<h3>{option.timeframes.daily.current}hrs</h3>
 				<p>Yesterday - {option.timeframes.daily.previous}</p>
-			{:else if weeklyButton}
+			{:else if mode === 'weekly'}
 				<h3>{option.timeframes.weekly.current}hrs</h3>
 				<p>Last week - {option.timeframes.weekly.previous}</p>
-			{:else if monthyButton}
+			{:else if mode === 'monthy'}
 				<h3>{option.timeframes.monthly.current}hrs</h3>
 				<p>Last month - {option.timeframes.monthly.previous}</p>
 			{/if}

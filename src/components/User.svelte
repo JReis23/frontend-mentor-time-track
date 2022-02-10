@@ -1,23 +1,18 @@
 <script>
 	import Box from '../ui/Box.svelte';
 
-	let dailyButton = true;
-	let weeklyButton = false;
-	let monthyButton = false;
+	export let mode = 'daily'
 
 	const handleDaily = () => {
-		dailyButton = true;
+		mode = 'daily';
 	};
 
 	const handleWeekly = () => {
-		weeklyButton = true;
-		dailyButton = false;
+		mode = 'weekly';
 	};
 
 	const handleMonthly = () => {
-		weeklyButton = false;
-		dailyButton = false;
-		monthyButton = true;
+		mode = 'monthy';
 	};
 </script>
 
@@ -38,7 +33,7 @@
 			</ol>
 		</div>
 	</div>
-	<Box {dailyButton} {weeklyButton} {monthyButton} />
+	<Box {mode} />
 </section>
 
 <style>
