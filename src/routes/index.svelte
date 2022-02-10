@@ -12,8 +12,10 @@
 <style>
 	main {
 		display: grid;
-		padding: 2rem;
 		min-height: 100vh;
-		grid-template-columns: repeat(auto-fill, minmax(250px, 1200px));
+		min-width: 100vw;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1440px));
+		justify-content: center;
+		align-content: center;
 	}
 </style>

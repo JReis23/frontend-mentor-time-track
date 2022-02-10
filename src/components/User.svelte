@@ -1,23 +1,18 @@
 <script>
 	import Box from '../ui/Box.svelte';
 
-	let dailyButton = true;
-	let weeklyButton = false;
-	let monthyButton = false;
+	export let mode = 'daily';
 
 	const handleDaily = () => {
-		dailyButton = true;
+		mode = 'daily';
 	};
 
 	const handleWeekly = () => {
-		weeklyButton = true;
-		dailyButton = false;
+		mode = 'weekly';
 	};
 
 	const handleMonthly = () => {
-		weeklyButton = false;
-		dailyButton = false;
-		monthyButton = true;
+		mode = 'monthy';
 	};
 </script>
 
@@ -38,7 +33,7 @@
 			</ol>
 		</div>
 	</div>
-	<Box {dailyButton} {weeklyButton} {monthyButton} />
+	<Box {mode} />
 </section>
 
 <style>
@@ -46,11 +41,12 @@
 		line-height: 1;
 	}
 	.container {
-		max-width: 1200px;
+		max-width: 1440px;
 		display: grid;
 		grid-gap: 10px;
-		grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+		grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
 		grid-template-rows: repeat(4, 1fr);
+		justify-content: center;
 	}
 
 	.user-box {
@@ -79,6 +75,10 @@
 		grid-row: 2/3;
 	}
 
+	.user-name h1 {
+		padding-top: 1rem;
+	}
+
 	.user-body {
 		display: grid;
 		align-items: center;
@@ -91,5 +91,38 @@
 
 	.user-body ol li {
 		padding: 0.225rem 0;
+	}
+
+	@media (max-width: 591px) {
+		h1 {
+			font-size: 1.6rem;
+		}
+
+		p {
+			font-size: 0.8rem;
+		}
+
+		.user-head {
+			padding: 1rem 0.6rem;
+			grid-template-columns: repeat(auto, 1fr);
+			align-items: center;
+		}
+
+		.user-name {
+			grid-row: 1/2;
+			grid-column: 2/3;
+		}
+
+		.user-head img {
+			height: 4rem;
+			width: 4rem;
+		}
+
+		.user-body ol {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			padding: 2rem 0.5rem;
+			justify-items: center;
+		}
 	}
 </style>
