@@ -13,7 +13,7 @@
 		<div class="body-{option.title} body">
 			<div class="body-title">
 				<h2>{option.title}</h2>
-				<button><img src="../static/images/icon-ellipsis.svg" alt="ellipsis" /></button>
+				<button><img src="../../images/icon-ellipsis.svg" alt="ellipsis" /></button>
 			</div>
 			{#if mode === 'daily'}
 				<h3>{option.timeframes.daily.current}hrs</h3>
