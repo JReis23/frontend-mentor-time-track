@@ -12,4 +12,17 @@ const config = {
 	}
 };
 
+export default {
+	kit: {
+		adapter: adapter({
+			out: 'build',
+			precompress: false,
+			env: {
+				host: 'MYHOST',
+				port: 'MYPORT'
+			}
+		})
+	}
+};
+
 export default config;
