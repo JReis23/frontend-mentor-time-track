@@ -5,9 +5,9 @@ export const manifest = {
 		mime: {".png":"image/png",".svg":"image/svg+xml"},
 		entry: {"file":"start-630d895c.js","js":["start-630d895c.js","chunks/vendor-21c2ed5f.js"],"css":[]},
 		nodes: [
-			() => import('./nodes/0.js'),
-			() => import('./nodes/1.js'),
-			() => import('./nodes/2.js')
+			() => import('./server/nodes/0.js'),
+			() => import('./server/nodes/1.js'),
+			() => import('./server/nodes/2.js')
 		],
 		routes: [
 			{
