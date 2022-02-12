@@ -3,6 +3,11 @@
 	import User from '../components/User.svelte';
 </script>
 
+<svelte:head>
+	<title>Frontendmentor challenge dashbboard</title>
+	<meta name="author" content="Joao Reis" />
+</svelte:head>
+
 <main class="main">
 	<div class="user">
 		<User />
