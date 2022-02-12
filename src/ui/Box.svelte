@@ -1,12 +1,11 @@
 <script>
 	import options from '../data/options.js';
-	import { draggable } from '@neodrag/svelte';
 
 	export let mode = 'daily';
 </script>
 
 {#each options as option (option.id)}
-	<section class="box" use:draggable={{ grid: [1, 3] }}>
+	<section class="box">
 		<div class="head-{option.title} head" style="background: var({option.color});">
 			<img src={option.icon} alt={`${option.title} ${option.id}`} />
 		</div>
