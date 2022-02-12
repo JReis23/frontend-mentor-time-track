@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://template.jreis.org/)
-- Live Site URL: [Add live site URL here](https://template.jreis.org/)
+- Solution URL: [Add solution URL here](https://frontend-mentor-time-track.vercel.app/)
+- Live Site URL: [Add live site URL here](https://frontend-mentor-time-track.vercel.app/)
 
 ## My process
 
