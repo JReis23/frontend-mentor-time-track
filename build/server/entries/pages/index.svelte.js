@@ -1,5 +1,4 @@
 import { c as create_ssr_component, a as each, e as escape, b as add_attribute, v as validate_component } from "../../chunks/index-7340f048.js";
-import "@neodrag/svelte";
 var options = [
   {
     id: 1,
